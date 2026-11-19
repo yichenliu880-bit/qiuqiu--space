@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d8e67b'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='48' fill='%23292d29'%3E✳%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="球球的宠物日常相册，收藏散步、发呆和快乐出游的小小瞬间。">
+  <title>球球的空间 · 每天都有小确幸</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="photos.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#album">跳到相册</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="球球的空间首页"><span class="brand-icon" aria-hidden="true">✳</span> 球球的空间<span class="brand-dot">.</span></a>
+    <nav aria-label="主导航"><a class="nav-active" href="#album">日常相册</a><a href="#about">关于球球 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> QIUQIU'S LITTLE WORLD</p>
+        <h1 id="hero-title">日子慢慢，<br>快乐<span class="sunshine">汪汪<svg viewBox="0 0 240 20" aria-hidden="true"><path d="M4 12 Q100 -3 235 10 M12 18 Q125 7 220 16"/></svg></span>。</h1>
+        <p class="hero-description">把散步的风、午后的阳光，<br>和每一个摇尾巴的瞬间，装进相册里。</p>
+        <a class="primary-link" href="#album">翻开球球的相册 <span aria-hidden="true">↘</span></a>
+        <div class="hero-note"><span aria-hidden="true">🐾</span> 平凡的小日子，也值得被好好记住。</div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit" aria-hidden="true">✧</div>
+        <figure class="hero-photo"><img src="assets/hero.jpg" alt="示例照片：阳光下的一只金毛犬" width="1000" height="1000" fetchpriority="high"><figcaption><span>今天的快乐：晒太阳 ☀</span><span>HAPPY LITTLE MOMENT</span></figcaption></figure>
+        <div class="round-sticker" aria-hidden="true"><span>快乐小狗</span><strong>100%</strong><span>HAPPY EVERY DAY</span></div>
+        <div class="scribble" aria-hidden="true">hello, sunshine ↗</div>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>小狗负责可爱 <span>✳</span> 我们负责记录 <span>✳</span> 慢慢走，认真玩 <span>✳</span> 快乐没有标准答案 <span>✳</span> 小狗负责可爱 <span>✳</span> 我们负责记录 <span>✳</span></div></div>
+    <section id="album" class="album wrap" aria-labelledby="album-title">
+      <div class="section-heading"><div><p class="eyebrow">LITTLE MOMENTS, BIG HAPPINESS</p><h2 id="album-title">小小瞬间，满满喜欢<span>✳</span></h2></div><p class="album-count" id="album-count" aria-live="polite">共 6 个可爱瞬间</p></div>
+      <div class="album-toolbar"><div class="filters" role="group" aria-label="按照片分类筛选"><button class="filter active" type="button" data-filter="all" aria-pressed="true">全部日常 <span>06</span></button><button class="filter" type="button" data-filter="walk" aria-pressed="false">散步时光</button><button class="filter" type="button" data-filter="home" aria-pressed="false">居家日常</button><button class="filter" type="button" data-filter="trip" aria-pressed="false">快乐出游</button></div><span class="view-hint">点击照片，放大一点快乐 ↗</span></div>
+      <div class="gallery" id="gallery"></div>
+      <noscript><p>请在浏览器中启用 JavaScript，以浏览照片相册和分类。</p></noscript>
+      <p class="sample-note">这里暂时住着几位示例小狗，等球球的真实照片来填满相册。<span>示例照片来源：Unsplash</span></p>
+    </section>
+    <section class="about wrap" id="about" aria-labelledby="about-title"><div class="about-badge" aria-hidden="true">🐾</div><div class="about-copy"><p class="eyebrow">A LITTLE SPACE, ALL ABOUT YOU</p><h2 id="about-title">世界很大，<br>这里装着球球的小日常。</h2><p>不赶时间，不追热点。<br>只想把一起度过的普通一天，变成以后翻起来会笑的回忆。</p></div><div class="about-aside"><span>散步 · 陪伴 · 记录</span><svg viewBox="0 0 160 80" fill="none" aria-hidden="true"><path d="M8 40C40 4 78 74 99 32S144 17 145 53M125 49l21 8 6-23"/></svg><p>愿每一天，<br>都有值得摇尾巴的事。</p></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><span class="brand-icon" aria-hidden="true">✳</span> 球球的空间<span class="brand-dot">.</span></a><p>用照片收藏陪伴，用陪伴填满日常。</p><a href="#">回到顶部 ↑</a></footer>
+  <dialog class="lightbox" id="lightbox" aria-label="照片大图"><div class="lightbox-shell"><button class="lightbox-close icon-button" aria-label="关闭大图" type="button">×</button><div class="lightbox-stage"><button class="lightbox-prev icon-button" aria-label="上一张照片" type="button">‹</button><img id="lightbox-image" src="" alt=""><button class="lightbox-next icon-button" aria-label="下一张照片" type="button">›</button></div><div class="lightbox-caption"><div><p id="lightbox-category"></p><h2 id="lightbox-title"></h2></div><span id="lightbox-count"></span></div><p class="keyboard-hint">← → 切换照片 · Esc 关闭</p></div></dialog>
+</body>
+</html>
